@@ -1,0 +1,130 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0; 
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    line-height: 2;
+    color: #000000;
+    background-color: #8ac5ff;
+}
+
+:focus-visible {
+    outline: 3px solid #2563eb;
+    outline-offset: 3px;
+}
+
+/* SITE */
+.header {
+    background-color: #2f6f4e;
+    color: #ffffff; 
+    text-align: center; 
+    padding: 2.5rem 0
+}
+
+.header h1{
+    margin: 0 0 0.5rem; 
+    font-size: 2.5rem; 
+}
+
+.header p {
+    margin: 0; 
+    font-size: 1.1rem;
+}
+
+/* NAVIGATION */
+.navigation {
+    background-color: #ffffff;
+    border-bottom: 1px solid #d9ded9
+}
+
+.navigation ul {
+    display: flex; 
+    justify-content: center; 
+    gap: 2rem; 
+    list-style: none; 
+    margin: 0; 
+    padding: 0.75rem 0;
+}
+
+.navigation a{
+    color: #2f6f4e; 
+    text-decoration: none; 
+    font-weight: bold; 
+}
+
+.navigation a:hover{
+    text-decoration: underline; 
+}
+
+/* MAIN */ 
+
+main {
+    min-height: 70vh; 
+}
+
+/* vert. spacing */ 
+.search-section {
+    padding: 3rem 0; 
+}
+.results-section {
+    padding: 3rem 0; 
+}
+.recipe-details {
+    padding: 3rem 0; 
+}
+
+
+.search-section h2{
+    margin-top: 0; 
+    color: #2f6f4e
+}
+.results-section h2{
+    margin-top: 0; 
+    color: #2f6f4e
+}
+.recipe-details h2{
+    margin-top: 0; 
+    color: #2f6f4e 
+}
+
+.search-section {
+    background-color: #eef5ef;
+}
+
+#search-form {
+    max-width: 800px; 
+    margin: 2rem auto 0
+}
+
+.search-field {
+    display: flex; 
+    flex-direction: column; 
+    gap: 0.5rem; 
+}
+
+#search-input {
+    width: 100%; 
+    padding: 0.85rem 1rem; 
+    border: 2px solid #b8c5ba; 
+    border-radius: 6px; 
+    background-color: #ffffff;
+    color: #2d2d2d; 
+    font-size: 1rem; 
+}
+
+#search-input:focus {
+    border-color: #2f6f4e;
+    outline: none; 
+}
+
+#search-button {
+    margin-top: 1rem; 
+    padding: 0.85rem 1.5rem; 
+    border: none; 
+    border-radius: 6px; 
+    background-color: #2f6f4e; 
+    color: #ffffff; 
+    
+}
