@@ -32,7 +32,7 @@ img {
     background-color: #2f6f4e;
     color: #ffffff; 
     text-align: center; 
-    padding: 2.5rem 0
+    padding: 2.5rem 0;
 }
 
 .header h1{
@@ -48,7 +48,7 @@ img {
 /* NAVIGATION */
 .navigation {
     background-color: #ffffff;
-    border-bottom: 1px solid #d9ded9
+    border-bottom: 1px solid #d9ded9;
 }
 
 .navigation ul {
@@ -90,15 +90,15 @@ main {
 
 .search-section h2{
     margin-top: 0; 
-    color: #2f6f4e
+    color: #2f6f4e;
 }
 .results-section h2{
     margin-top: 0; 
-    color: #2f6f4e
+    color: #2f6f4e;
 }
 .recipe-details h2{
     margin-top: 0; 
-    color: #2f6f4e 
+    color: #2f6f4e;
 }
 
 .search-section {
@@ -107,7 +107,7 @@ main {
 
 #search-form {
     max-width: 800px; 
-    margin: 2rem auto 0
+    margin: 2rem auto 0;
 }
 
 .search-field {
