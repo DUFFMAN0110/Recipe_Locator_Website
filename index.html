@@ -45,7 +45,60 @@
                 Search by recipe name, ingredient, or type of meal.
             </p>
         </header>
+
+        <!-- Search form, this is where API request will be -->
+         <form id="search-form">
+            <label for="search-input">
+                Recipe or ingredient
+            </label>
+
+            <input
+                type="search"
+                id="search-input"
+                name="search"
+                placeholder="e.g. chicken. pasta, tacos..."
+                autocomplete="off"
+                required
+                >
+
+                <button type="submit" id="search-button">
+                    Search
+                </button>
+                
+         </form>
+
+         <!-- Status Area -->
+          <p id="search-status"
+          class="search-status"
+          aria-live="polite"></p>
+          
     </section>
+    <!-- Recipe Results Section -->
+     <section id="recipes" class="results-section" aria-labelledby="results-heading">
+        <header>
+            <h2 id="results-heading">Recipe Results</h2>
+        </header>
+
+        <!-- Message shown before a search is performed -->
+        <p class="empty-message">
+            Search for a recipe or ingredient to get started!
+        </p>
+     </section>
+
+     <!-- Recipe Details Section -->
+      <section id="recipe-details" class="recipe-details" aria-labelledby="details-heading" hidden>
+        <header>
+            <h2 id="details-heading">Recipe Details</h2>
+        </header>
+
+        <button 
+            type="button"
+            id="close-details"
+            class="close-button"
+            aria-label="Close recipe details"
+            >Close</button>
+
+      </section>
      </main>
 </body>
 
