@@ -3,33 +3,39 @@
 
 <head> 
     <meta charset="UTF-8">
-    <meta name="viewport" content=""width-device-width, initial-scale="1.0">
+    <meta name="viewport" content="width-device-width", initial-scale="1.0">
 
     <title>Recipe Locator</title>
 
     <!-- External stylesheet for this page when created -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
     <!-- Header containing app name and purpose -->
      <header class ="header">
-        <h1>Recipe Locator</h1>
-        <p>
-            Find recipes by ingredients, recipe names, or meal types.
-        </p>
+        <div class="container">
+            <h1>Recipe Locator</h1>
+            <p>
+                Find recipes by ingredients, recipe names, or meal types.
+            </p>
+
+        </div>
      </header>
 
      <!-- Main navigation section -->
      <nav class="navigation" aria-label="Main navigation">
-        <ul>
-            <li>
-                <a href="#search">Search Recipes</a>
-            </li>
-            <li>
-                <a href="#recipes">Display Recipes</a>
-            </li>
-        </ul>
+        <div class="container"> 
+            <ul>
+                <li>
+                    <a href="#search">Search Recipes</a>
+                </li>
+                <li>
+                    <a href="#recipes">Display Recipes</a>
+                </li>
+            </ul>
+        </div>
+
      </nav>
 
      <!-- Main Content of the Recipe Locator Web Application -->
@@ -39,76 +45,100 @@
             class="search-section" 
             aria-labelledby="search-heading"
         >
-        <header>
-            <h2 id="search-heading">Find a Recipe</h2>
-            <p>
-                Search by recipe name, ingredient, or type of meal.
-            </p>
-        </header>
+        <div class="container">
+            <header>
+                <h2 id="search-heading">Find a Recipe</h2>
+                <p>
+                    Search by recipe name, ingredient, or type of meal.
+                </p>
+            </header>
+       
+            <!-- Search form, this is where API request will be -->
+            <form id="search-form">
+                <div class="search-field">
+                    <label for="search-input">
+                        Recipe or ingredient
+                    </label>
 
-        <!-- Search form, this is where API request will be -->
-         <form id="search-form">
-            <label for="search-input">
-                Recipe or ingredient
-            </label>
-
-            <input
-                type="search"
-                id="search-input"
-                name="search"
-                placeholder="e.g. chicken. pasta, tacos..."
-                autocomplete="off"
-                required
-                >
+                    <input
+                        type="search"
+                        id="search-input"
+                        name="search"
+                        placeholder="e.g. chicken, pasta, tacos..."
+                        autocomplete="off"
+                        required
+                        >
+                </div>
 
                 <button type="submit" id="search-button">
                     Search
                 </button>
-                
-         </form>
+                    
+            </form>
 
-         <!-- Status Area -->
-          <p id="search-status"
-          class="search-status"
-          aria-live="polite"></p>
-          
+            <!-- Status Area -->
+            <p id="search-status"
+            class="search-status"
+            aria-live="polite"></p>
+        </div>
+
     </section>
     <!-- Recipe Results Section -->
-     <section id="recipes" class="results-section" aria-labelledby="results-heading">
-        <header>
-            <h2 id="results-heading">Recipe Results</h2>
-        </header>
-
-        <!-- Message shown before a search is performed -->
-        <p class="empty-message">
-            Search for a recipe or ingredient to get started!
-        </p>
+     <section 
+        id="recipes" 
+        class="results-section" 
+        aria-labelledby="results-heading"
+        >
+        <div class="container">
+            <header>
+                <h2 id="results-heading">Recipe Results</h2>
+            </header>
+        
+            <div
+                id="recipe-results"
+                class="recipe-results"
+                aria-live="polite"
+            >
+                <!-- Message shown before a search is performed -->
+                <p class="empty-message">
+                    Search for a recipe or ingredient to get started!
+                </p>
+            </div>
+        </div>
+        
      </section>
 
      <!-- Recipe Details Section -->
       <section id="recipe-details" class="recipe-details" aria-labelledby="details-heading" hidden>
-        <header>
-            <h2 id="details-heading">Recipe Details</h2>
-        </header>
+        <div class="container">   
+            <header>
+                <h2 id="details-heading">Recipe Details</h2>
+            </header>
+            
+            <div class="details-actions">
+                <button 
+                    type="button"
+                    id="close-details"
+                    class="close-button"
+                    aria-label="Close recipe details"
+                    >Close</button>
+            </div>
+            
+            <article id="details-content">
 
-        <button 
-            type="button"
-            id="close-details"
-            class="close-button"
-            aria-label="Close recipe details"
-            >Close</button>
-        <article id="details-content">
-
-        </article>
+            </article>
+        </div>
 
       </section>
 
      </main>
 
     <footer class="footer">
-        <p>
-            © 2026 Recipe Locator by Joseph Duff. All rights reserved. 
-        </p>
+        <div class="container">
+            <p>
+                © 2026 Recipe Locator by Joseph Duff. All rights reserved. 
+            </p>
+        </div>
     </footer>
 
     <script src="app.js"></script>
