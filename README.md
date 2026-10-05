@@ -35,11 +35,11 @@ You will need:
 
 ```text
 Recipe_Locator_Website/
-│
-├── index.html
-├── styles.css
-├── app.js
-└── README.md
+|
+|── index.html
+|── styles.css
+|── app.js
+|── README.md
 ```
 ### AI Disclosure
 
