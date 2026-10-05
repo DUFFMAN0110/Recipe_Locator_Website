@@ -21,7 +21,7 @@ The primary goal of Recipe Locator is to provide an easy-to-use recipe search ex
 
 ## How to Run
 
-Recipe Locator is currently designed to run locally; however, go to 'https://recipeapi.io/' to create an api key to then input into the 'const API_KEY="" ' for proper functionality. 
+Recipe Locator is currently designed to run locally; however, you need to go to 'https://recipeapi.io/' to create an api key to then input into the 'const API_KEY="" ' within the app.js file for proper functionality. 
 
 ### Requirements
 
